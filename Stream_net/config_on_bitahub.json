@@ -1,0 +1,21 @@
+{
+    "datasets": {
+        "training_datasets_path": "./drop_datasets/drop_dataset_train_standardized.json",
+        "validation_datasets_path": "./drop_datasets/drop_dataset_dev_standardized.json",
+        "batch_size": 2
+    },
+    "model": {
+        "input_dims":1024,
+        "hidden_dims":1024,
+        "pretrained_model": "/model/yyyan/bert-large-uncased",
+        "model_root_path": "/output/"
+    },
+    "train": {
+        "learning_rate": 1e-5,
+        "epoch": 20,
+        "log_root_path": "/output/"
+    },
+    "evaluate": {
+        "log_root_path": "/output/"
+    }
+}
